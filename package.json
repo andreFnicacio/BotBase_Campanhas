@@ -1,0 +1,23 @@
+{
+  "name": "food-commerce-gpt",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "dev": "redis-cli -h 127.0.0.1 FLUSHALL && nodemon",
+    "start": "node build/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typecript": "^0.0.1-security"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "ioredis": "^5.3.2",
+    "venom-bot": "^5.0.2"
+  }
+}
